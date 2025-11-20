@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[CoffeeShop]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[CoffeeShop].[CoffeeName] is being dropped, data loss could occur.
+       The column [dbo].[CoffeeShop].[IdItem] is being dropped, data loss could occur.
+       The column [dbo].[CoffeeShop].[TotalAmount] is being dropped, data loss could occur.
+       The column [dbo].[CoffeeShop].[ItemId] on table [dbo].[CoffeeShop] must be added, but the column has no default value
+         and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+
+** User actions
+     Recreate table
+       [dbo].[CoffeeShop] (Table)
+     Alter
+       [dbo].[CreateCoffeeShop] (Procedure)
+       [dbo].[GetAllCoffeeShop] (Procedure)
+       [dbo].[UpdateCoffeeShop] (Procedure)
+       [dbo].[DeleteCoffeeShop] (Procedure)
+
+** Supporting actions
+
+The column [dbo].[CoffeeShop].[CoffeeName] is being dropped, data loss could occur.
+The column [dbo].[CoffeeShop].[IdItem] is being dropped, data loss could occur.
+The column [dbo].[CoffeeShop].[TotalAmount] is being dropped, data loss could occur.
+The column [dbo].[CoffeeShop].[ItemId] on table [dbo].[CoffeeShop] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+If this deployment is executed, changes to [dbo].[CoffeeShop] might introduce run-time errors in [dbo].[GetCoffeeShop].
+
